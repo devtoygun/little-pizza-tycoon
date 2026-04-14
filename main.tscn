@@ -2,8 +2,13 @@
 
 [ext_resource type="Texture2D" uid="uid://d1w5sexu78ral" path="res://assets/background.png" id="1_ig7tw"]
 [ext_resource type="Texture2D" uid="uid://cxfbh8bo6nnd4" path="res://assets/workbench.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://csr7l54e7kra3" path="res://assets/beveragecabinet.png" id="2_7mycd"]
 [ext_resource type="Texture2D" uid="uid://byxpal2cvipgl" path="res://assets/cash-register.png" id="3_h2yge"]
 [ext_resource type="Texture2D" uid="uid://bntigpaneucwn" path="res://assets/vitrin.png" id="4_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://bo16dk4umniq4" path="res://assets/tabela.png" id="5_272bh"]
+[ext_resource type="Texture2D" uid="uid://7m1kbykjt70b" path="res://assets/headbar.png" id="7_272bh"]
+[ext_resource type="Texture2D" uid="uid://c8c8h8r85a1q2" path="res://assets/moneybar.png" id="8_5vw27"]
+[ext_resource type="Texture2D" uid="uid://c82lp4bmljrxp" path="res://assets/settings.png" id="9_kek77"]
 
 [node name="Node2D" type="Node2D" unique_id=1734792315]
 
@@ -11,6 +16,11 @@
 position = Vector2(638, 357)
 scale = Vector2(0.66692704, 0.6666667)
 texture = ExtResource("1_ig7tw")
+
+[node name="Beveragecabinet" type="Sprite2D" parent="." unique_id=1777685289]
+position = Vector2(602, 281)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_7mycd")
 
 [node name="Workbench" type="Sprite2D" parent="." unique_id=32127244]
 position = Vector2(738, 474)
@@ -22,7 +32,60 @@ position = Vector2(377, 347)
 scale = Vector2(0.79585797, 0.79585797)
 texture = ExtResource("3_h2yge")
 
+[node name="Tabela" type="Sprite2D" parent="." unique_id=437944065]
+position = Vector2(846, 213.00002)
+scale = Vector2(0.1843467, 0.1843467)
+texture = ExtResource("5_272bh")
+
 [node name="Vitrin" type="Sprite2D" parent="." unique_id=1430428113]
 position = Vector2(1035, 307)
 scale = Vector2(0.15065147, 0.15065147)
 texture = ExtResource("4_1bvp3")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=515336968]
+
+[node name="Node2D" type="Node2D" parent="CanvasLayer" unique_id=1517463076]
+
+[node name="Headbar" type="Sprite2D" parent="CanvasLayer" unique_id=1952914600]
+position = Vector2(647, 44)
+texture = ExtResource("7_272bh")
+
+[node name="Moneybar" type="Sprite2D" parent="CanvasLayer/Headbar" unique_id=1723318863]
+position = Vector2(-548, -1)
+scale = Vector2(0.20000002, 0.2)
+texture = ExtResource("8_5vw27")
+
+[node name="Label" type="Label" parent="CanvasLayer/Headbar" unique_id=115167039]
+offset_left = -552.0
+offset_top = -9.0
+offset_right = -493.0
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 17
+text = "0"
+
+[node name="Moneybar2" type="Sprite2D" parent="CanvasLayer/Headbar" unique_id=1582300174]
+position = Vector2(-404.59998, -1)
+scale = Vector2(0.20000002, 0.2)
+texture = ExtResource("8_5vw27")
+
+[node name="Label2" type="Label" parent="CanvasLayer/Headbar" unique_id=1267350669]
+offset_left = -408.59998
+offset_top = -9.0
+offset_right = -349.59998
+offset_bottom = 27.0
+theme_override_font_sizes/font_size = 17
+text = "0"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Headbar" unique_id=4069874]
+offset_left = -250.0
+offset_top = -47.0
+offset_right = 376.0
+offset_bottom = 47.0
+theme_override_font_sizes/normal_font_size = 59
+theme_override_font_sizes/bold_font_size = 31
+text = "Little Pizza Tycoon"
+
+[node name="Settings" type="Sprite2D" parent="CanvasLayer/Headbar" unique_id=1839669799]
+position = Vector2(568, -1.9418981)
+scale = Vector2(0.21434434, 0.2139683)
+texture = ExtResource("9_kek77")
