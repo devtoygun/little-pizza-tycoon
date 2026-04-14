@@ -1,10 +1,28 @@
 [gd_scene format=3 uid="uid://dyitk31wd7xpy"]
 
-[ext_resource type="Texture2D" uid="uid://d1w5sexu78ral" path="res://background.png" id="1_yc5rk"]
+[ext_resource type="Texture2D" uid="uid://d1w5sexu78ral" path="res://assets/background.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://cxfbh8bo6nnd4" path="res://assets/workbench.png" id="2_0xm2m"]
+[ext_resource type="Texture2D" uid="uid://byxpal2cvipgl" path="res://assets/cash-register.png" id="3_h2yge"]
+[ext_resource type="Texture2D" uid="uid://bntigpaneucwn" path="res://assets/vitrin.png" id="4_1bvp3"]
 
 [node name="Node2D" type="Node2D" unique_id=1734792315]
 
 [node name="Background" type="Sprite2D" parent="." unique_id=29007556]
-position = Vector2(575.75, 324.00003)
-scale = Vector2(0.6002604, 0.6000001)
-texture = ExtResource("1_yc5rk")
+position = Vector2(638, 357)
+scale = Vector2(0.66692704, 0.6666667)
+texture = ExtResource("1_ig7tw")
+
+[node name="Workbench" type="Sprite2D" parent="." unique_id=32127244]
+position = Vector2(738, 474)
+scale = Vector2(0.744113, 0.6148504)
+texture = ExtResource("2_0xm2m")
+
+[node name="CashRegister2" type="Sprite2D" parent="." unique_id=124762178]
+position = Vector2(377, 347)
+scale = Vector2(0.79585797, 0.79585797)
+texture = ExtResource("3_h2yge")
+
+[node name="Vitrin" type="Sprite2D" parent="." unique_id=1430428113]
+position = Vector2(1035, 307)
+scale = Vector2(0.15065147, 0.15065147)
+texture = ExtResource("4_1bvp3")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1w5sexu78ral"
-path="res://.godot/imported/background.png-98289422cd7d93003950872a7b97021f.ctex"
+uid="uid://byxpal2cvipgl"
+path="res://.godot/imported/cash-register.png-62011f25baee97e67bd48413df05503c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background.png"
-dest_files=["res://.godot/imported/background.png-98289422cd7d93003950872a7b97021f.ctex"]
+source_file="res://assets/cash-register.png"
+dest_files=["res://.godot/imported/cash-register.png-62011f25baee97e67bd48413df05503c.ctex"]
 
 [params]
 
